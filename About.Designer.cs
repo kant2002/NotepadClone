@@ -66,7 +66,7 @@
             // 
             // pictureBox1
             // 
-            this.pictureBox1.Image = global::MyNotepad.Properties.Resources.BigIcon;
+            this.pictureBox1.Image = global::NotepadClone.Properties.Resources.BigIcon;
             this.pictureBox1.Location = new System.Drawing.Point(-8, -13);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(269, 260);
