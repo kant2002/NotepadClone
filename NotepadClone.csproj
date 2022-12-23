@@ -1,10 +1,13 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
   <PropertyGroup>
-    <TargetFramework>net5.0-windows</TargetFramework>
+    <TargetFramework>net7.0-windows</TargetFramework>
     <OutputType>WinExe</OutputType>
     <UseWindowsForms>true</UseWindowsForms>
     <DisableImplicitNamespaceImports>true</DisableImplicitNamespaceImports>
     <GenerateAssemblyInfo>false</GenerateAssemblyInfo>
+    <PublishAot>true</PublishAot>
+    <_SuppressWinFormsTrimError>true</_SuppressWinFormsTrimError>
+    <CustomResourceTypesSupport>true</CustomResourceTypesSupport>
   </PropertyGroup>
   <PropertyGroup>
     <ApplicationIcon>icon.ico</ApplicationIcon>
@@ -24,8 +27,7 @@
     <RdXmlFile Include="rd.xml" />
   </ItemGroup>
   <ItemGroup>
-    <PackageReference Include="Microsoft.DotNet.ILCompiler" Version="6.0.0-*" />
-    <PackageReference Include="WinFormsComInterop" Version="0.2.8" />
+    <PackageReference Include="WinFormsComInterop" Version="0.3.2" />
   </ItemGroup>
   <ItemGroup>
     <EmbeddedResource Update="Properties\Resources.resx">
